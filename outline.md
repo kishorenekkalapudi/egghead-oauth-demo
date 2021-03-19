@@ -2,12 +2,15 @@
 
 
 ## 1. Get a client ID and Secret
+    - What's the main take-away of this lesson?
 
 1. Get a client ID and Secret from GitHub
 1. Keep your secret safe. It's the key to your data
 
 ## 2. Create a client app
-
+   - theres an argument to be made here that you could have this code set up 'before' the course starts.
+    - with that being said, it seems like **lessons main take-away** here is to define client-client and client server for the learner 
+ 
 1. Set a web app with parcel
 1. Learn that an OAuth client has a client-client and a client-server
 
@@ -37,6 +40,7 @@ npm i -D nodemon
 ```
 
 ## 3 Get Consent from Resource Owner using Code Grant
+    - This is a great breakdown!
 
 1. **Resource Owner** is the user that will be authorizing
 1. A **code** is what the **Authorization Server** gives you after the resource owner gives consent
@@ -67,6 +71,7 @@ loginLinkEl.setAttribute('href', authorizationUrl);
 
 
 ## 4 Create a Client-Server
+    - same as lesson number 02. The main take-away here is to define client-server for the learner? 
 
 1. Create an express server
 1. Enable CORS
@@ -92,6 +97,8 @@ app.listen(1235, function () {
 
 
 ## 5 Exchange Code for Token
+    - what's the goal for exchanging code for token? 
+        - the answer could be part of the title (and expanded on in the description when those are created) 
 
 1. Protect secret by creating a .env and ignoring it in git
 1. A `/code` server endpoint that exchanges code for token
@@ -204,6 +211,8 @@ async function fetchRepos() {
 ```
 
 ## 9. OAuth 2 vs Open ID, Authorization vs Authentication
+    - What is the primary goal of this lesson?
+        - would it make sense to have this type of 'authorization vs authentication' as well as a separate lesson implementing authentication with Open Id 
 
 1. OAuth is for authorization
 1. The steps we took to get the access token is Oauth
