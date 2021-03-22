@@ -3,12 +3,14 @@
 
 ## 1. Get a client ID and Secret
 
+A client ID and secret is how an Auth server like GH or Google identifies the app that is requesting access to a user's data. You need one before a user can authorize your app.
+
 1. Get a client ID and Secret from GitHub
 1. Keep your secret safe. It's the key to your data
 
-## 2. Create a client app
+## 2. Create a client-client
 
-1. Set a web app with parcel
+1. Set a client and a server app
 1. Learn that an OAuth client has a client-client and a client-server
 
 ```bash
@@ -68,6 +70,8 @@ loginLinkEl.setAttribute('href', authorizationUrl);
 
 ## 4 Create a Client-Server
 
+A client's server is part of the what OAuth considers as a client and is where the client secret is used
+
 1. Create an express server
 1. Enable CORS
 1. Add a basic route
@@ -91,7 +95,9 @@ app.listen(1235, function () {
 ```
 
 
-## 5 Exchange Code for Token
+## 5 Exchange Code for an Access Token
+
+Getting a user's access token gives you access to their data based on the consent they gave to your app
 
 1. Protect secret by creating a .env and ignoring it in git
 1. A `/code` server endpoint that exchanges code for token
